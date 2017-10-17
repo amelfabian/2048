@@ -37,10 +37,6 @@ public class UiPanel extends Composite implements ClickHandler {
 	@UiField MyTable mytable;
 	
 
-	public UiPanel(String firstName) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
-
 
 
 	@Override

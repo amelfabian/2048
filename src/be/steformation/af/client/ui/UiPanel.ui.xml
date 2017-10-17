@@ -4,29 +4,23 @@
 	xmlns:m="urn:import:gwt.material.design.client.ui"
 	xmlns:af="urn:import:be.steformation.af.client.ui.widget">
 	<ui:style>
-	.important {
-		font-weight: bold;
+	.blue{
+	background:blue;
+
 	}
 	</ui:style>
 
 	<m:MaterialRow>
 		<m:MaterialColumn>
-			<m:MaterialRow> <!-- buttons -->
-				<m:MaterialColumn grid="s2" offset="s8">
-					<af:Down text="Down" ui:field="down"/>
-				</m:MaterialColumn>
-				<m:MaterialColumn grid="s2" offset="s8">
+			<m:MaterialRow marginTop="50"> <!-- buttons -->
+				<m:MaterialColumn grid="s2">
 					<af:Up text="Up" ui:field="up"/>
+					<af:Down text="Down" ui:field="down"/>
+				 	<af:Left text="Left" ui:field="left"/>
+					<af:Right text="Right" ui:field="right"/>
 				</m:MaterialColumn>
-				<m:MaterialColumn grid="s2" offset="s8">
-				 <af:Left text="Left" ui:field="left"/>
-				</m:MaterialColumn>
-				<m:MaterialColumn grid="s2" offset="s8">
-				<af:Right text="Right" ui:field="right"/>
-				</m:MaterialColumn>
-			</m:MaterialRow>
-			<m:MaterialRow>
-				<m:MaterialColumn grid= "s2"> <!-- tableau -->
+				<m:MaterialColumn></m:MaterialColumn>
+				<m:MaterialColumn>
 					<af:MyTable ui:field="mytable"/>
 				</m:MaterialColumn>
 			</m:MaterialRow>
