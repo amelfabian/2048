@@ -9,16 +9,13 @@ import gwt.material.design.client.ui.MaterialButton;
 
 public class Up extends MaterialButton implements ClickHandler{
 	
-	@UiConstructor
-	public Up(String placeholder) {
-		GWT.log("Up.Up()");
-		this.setPlaceholder(placeholder);
-	}
 
-	private void setPlaceholder(String placeholder) {
-		// TODO Auto-generated method stub
+	public Up() {
+		GWT.log("Up.Up()");
 		
 	}
+
+
 
 	@Override
 	public void onClick(ClickEvent event) {

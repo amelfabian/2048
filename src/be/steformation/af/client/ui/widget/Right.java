@@ -9,17 +9,13 @@ import gwt.material.design.client.ui.MaterialButton;
 
 public class Right extends MaterialButton implements ClickHandler{
 		
-		@UiConstructor
-		public Right(String placeholder) {
-			GWT.log("Right.Right()");
-			this.setPlaceholder(placeholder);
 		
+		public Right() {
+			GWT.log("Right.Right()");
+	
 		}
 
-		private void setPlaceholder(String placeholder) {
-			// TODO Auto-generated method stub
-			
-		}
+
 
 		@Override
 		public void onClick(ClickEvent event) {

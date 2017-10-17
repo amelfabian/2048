@@ -15,6 +15,7 @@ import com.google.gwt.user.client.ui.Widget;
 
 import be.steformation.af.client.ui.widget.Down;
 import be.steformation.af.client.ui.widget.Left;
+import be.steformation.af.client.ui.widget.MyTable;
 import be.steformation.af.client.ui.widget.Right;
 import be.steformation.af.client.ui.widget.Up;
 
@@ -33,7 +34,7 @@ public class UiPanel extends Composite implements ClickHandler {
 	@UiField Up up;
 	@UiField Left left;
 	@UiField Right right;
-	
+	@UiField MyTable mytable;
 	
 
 	public UiPanel(String firstName) {

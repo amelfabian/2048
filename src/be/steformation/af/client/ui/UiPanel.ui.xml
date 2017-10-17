@@ -12,17 +12,22 @@
 	<m:MaterialRow>
 		<m:MaterialColumn>
 			<m:MaterialRow> <!-- buttons -->
-				<m:MaterialColumn grid="s2">
-					<af:Down placeholder="Down" ui:field="down"/>
-				</m:MaterialColumn>
-				<m:MaterialColumn grid="s2" offset="s4">
-					<af:Up placeholder="Up" ui:field="up"/>
-				</m:MaterialColumn>
-				<m:MaterialColumn grid="s2" offset="s6">
-				 <af:Left placeholder="Left" ui:field="left"/>
+				<m:MaterialColumn grid="s2" offset="s8">
+					<af:Down text="Down" ui:field="down"/>
 				</m:MaterialColumn>
 				<m:MaterialColumn grid="s2" offset="s8">
-				<af:Right placeholder="Right" ui:field="right"/>
+					<af:Up text="Up" ui:field="up"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="s2" offset="s8">
+				 <af:Left text="Left" ui:field="left"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="s2" offset="s8">
+				<af:Right text="Right" ui:field="right"/>
+				</m:MaterialColumn>
+			</m:MaterialRow>
+			<m:MaterialRow>
+				<m:MaterialColumn grid= "s2"> <!-- tableau -->
+					<af:MyTable ui:field="mytable"/>
 				</m:MaterialColumn>
 			</m:MaterialRow>
 		</m:MaterialColumn>

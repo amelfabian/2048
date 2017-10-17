@@ -9,16 +9,12 @@ import gwt.material.design.client.ui.MaterialButton;
 
 public class Down extends MaterialButton implements ClickHandler{
 	
-	@UiConstructor
-	public Down(String placeholder) {
+ 
+	public Down() {
 		GWT.log("Down.Down()");
-		this.setplaceholder(placeholder);
+
 	}
 
-	private void setplaceholder(String placeholder) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public void onClick(ClickEvent event) {
