@@ -24,11 +24,13 @@ public class MyTable extends MaterialPanel{
 	                colonne.add(cellule);
 	                ligne.add(colonne);
 	                table[i][j] = cellule;
-	                int r = Random.nextInt() %2;
+	                int r = Random.nextInt(5);
 	                if(i==r && j==r){
+	                	int n = Random.nextInt(3);
+	                	text = Integer.toString(n);
 	                	cellule.setText("2"); 
 	                }
-	                int t = Random.nextInt() %2;
+	                int t = Random.nextInt(5);
 	                if(i==t && j==t){
 	                	cellule.setText("2"); 
 	                }
