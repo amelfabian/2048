@@ -13,7 +13,8 @@ public class Right extends MaterialButton implements ClickHandler{
 		
 		public Right() {
 			GWT.log("Right.Right()");
-	
+			this.addClickHandler(this);
+
 		}
 
 

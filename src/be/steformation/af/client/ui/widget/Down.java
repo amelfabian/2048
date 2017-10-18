@@ -13,7 +13,7 @@ public class Down extends MaterialButton implements ClickHandler{
  
 	public Down() {
 		GWT.log("Down.Down()");
-
+		this.addClickHandler(this);
 	}
 
 

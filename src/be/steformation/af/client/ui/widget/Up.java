@@ -13,7 +13,8 @@ public class Up extends MaterialButton implements ClickHandler{
 
 	public Up() {
 		GWT.log("Up.Up()");
-		
+		this.addClickHandler(this);
+
 	}
 
 

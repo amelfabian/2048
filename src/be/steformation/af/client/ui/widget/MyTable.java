@@ -3,6 +3,7 @@ package be.steformation.af.client.ui.widget;
 
 
 
+import com.google.gwt.core.shared.GWT;
 import com.google.gwt.user.client.Random;
 import com.google.gwt.user.client.ui.HTMLTable.Cell;
 
@@ -16,6 +17,7 @@ public class MyTable extends MaterialPanel{
 		Case table[][] = new Case[4][4];
 		
 		public MyTable() {
+			GWT.log("MyTable.MyTable()");
 		     int t = Random.nextInt(4);
              int w = Random.nextInt(4);
              int r = Random.nextInt(4);
