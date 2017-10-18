@@ -19,6 +19,7 @@ import be.steformation.af.client.ui.widget.MyTable;
 import be.steformation.af.client.ui.widget.Right;
 import be.steformation.af.client.ui.widget.Up;
 
+
 public class UiPanel extends Composite implements ClickHandler {
 
 	private static UiPanelUiBinder uiBinder = GWT.create(UiPanelUiBinder.class);
@@ -30,8 +31,9 @@ public class UiPanel extends Composite implements ClickHandler {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 
-	@UiField Down down;
+	
 	@UiField Up up;
+	@UiField Down down;
 	@UiField Left left;
 	@UiField Right right;
 	@UiField MyTable mytable;
