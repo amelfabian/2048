@@ -17,7 +17,8 @@ public class ResetButton extends MaterialButton implements IReset,ClickHandler{
 		public ResetButton() {
 			super();
 			GWT.log("ResetButton.ResetButton()");
-			EventManager.getInstance().addHandler(Reset.type, this);
+			this.addClickHandler(this);
+
 		}
 	@Override
 	public void OnReset(Reset event) {
