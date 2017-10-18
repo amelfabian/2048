@@ -13,11 +13,14 @@
 	<m:MaterialRow>
 		<m:MaterialColumn>
 			<m:MaterialRow marginTop="50"> <!-- buttons -->
-				<m:MaterialColumn grid="s2">
+				<m:MaterialColumn grid="s2" offset="s2">
 					<af:Up text="Up" ui:field="up"/>
 					<af:Down text="Down" ui:field="down"/>
 				 	<af:Left text="Left" ui:field="left"/>
 					<af:Right text="Right" ui:field="right"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="s2" offset="s6">
+					<af:ResetButton text="Reset" ui:field="reset"/>
 				</m:MaterialColumn>
 				<m:MaterialColumn></m:MaterialColumn>
 				<m:MaterialColumn>
