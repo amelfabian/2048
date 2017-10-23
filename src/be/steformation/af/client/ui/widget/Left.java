@@ -6,6 +6,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiConstructor;
 import com.google.gwt.user.client.Window;
 
+import be.steformation.af.client.event.EventManager;
 import be.steformation.af.client.event.direction.Direction;
 import gwt.material.design.client.ui.MaterialButton;
 
@@ -19,6 +20,8 @@ public class Left extends MaterialButton implements ClickHandler{
 
 	@Override
 	public void onClick(ClickEvent event) {
-		Window.alert("left");
+		GWT.log("Left.onClick()");
+		Direction evenement = new Direction("left");
+		EventManager.getInstance().fireEvent(evenement);
 	}
 }
